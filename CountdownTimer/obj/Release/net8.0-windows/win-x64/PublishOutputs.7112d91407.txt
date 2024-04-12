@@ -1,0 +1,2 @@
+D:\Projects\Rider\Release\DebateTimer.pdb
+D:\Projects\Rider\Release\DebateTimer.exe

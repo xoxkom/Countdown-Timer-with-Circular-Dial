@@ -1,0 +1,14 @@
+D:\Projects\Rider\Debug\DebateTimer\bin\Debug\net8.0-windows\DebateTimer.exe
+D:\Projects\Rider\Debug\DebateTimer\bin\Debug\net8.0-windows\DebateTimer.deps.json
+D:\Projects\Rider\Debug\DebateTimer\bin\Debug\net8.0-windows\DebateTimer.runtimeconfig.json
+D:\Projects\Rider\Debug\DebateTimer\bin\Debug\net8.0-windows\DebateTimer.dll
+D:\Projects\Rider\Debug\DebateTimer\bin\Debug\net8.0-windows\DebateTimer.pdb
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.AssemblyInfoInputs.cache
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.AssemblyInfo.cs
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.csproj.CoreCompileInputs.cache
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.dll
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\refint\DebateTimer.dll
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.pdb
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\DebateTimer.genruntimeconfig.cache
+D:\Projects\Rider\Debug\DebateTimer\obj\Debug\net8.0-windows\ref\DebateTimer.dll
