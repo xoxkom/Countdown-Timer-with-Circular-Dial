@@ -1,2 +1,2 @@
-C:\Users\c2085\Desktop\DebateTimer.pdb
-C:\Users\c2085\Desktop\DebateTimer.exe
+C:\Users\c2085\Desktop\CountdownTimer.pdb
+C:\Users\c2085\Desktop\CountdownTimer.exe

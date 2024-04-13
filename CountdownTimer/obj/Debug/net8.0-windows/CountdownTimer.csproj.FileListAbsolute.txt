@@ -1,0 +1,14 @@
+D:\Projects\Rider\Debug\CountdownTimer\bin\Debug\net8.0-windows\CountdownTimer.exe
+D:\Projects\Rider\Debug\CountdownTimer\bin\Debug\net8.0-windows\CountdownTimer.deps.json
+D:\Projects\Rider\Debug\CountdownTimer\bin\Debug\net8.0-windows\CountdownTimer.runtimeconfig.json
+D:\Projects\Rider\Debug\CountdownTimer\bin\Debug\net8.0-windows\CountdownTimer.dll
+D:\Projects\Rider\Debug\CountdownTimer\bin\Debug\net8.0-windows\CountdownTimer.pdb
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.AssemblyInfoInputs.cache
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.AssemblyInfo.cs
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.csproj.CoreCompileInputs.cache
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.dll
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\refint\CountdownTimer.dll
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.pdb
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\CountdownTimer.genruntimeconfig.cache
+D:\Projects\Rider\Debug\CountdownTimer\obj\Debug\net8.0-windows\ref\CountdownTimer.dll

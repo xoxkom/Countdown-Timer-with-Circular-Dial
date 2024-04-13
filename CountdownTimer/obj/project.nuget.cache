@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "PfTKf4fxkLF0bUEv6DYeLyJhmVB7lFwxR5ePZ5/pRN9Kh2Gk9xnUsVr6mhHLtGSiflbVAgnvUVfPYQMSQEMAEw==",
+  "dgSpecHash": "ZdG6OcgyQ9B+8yZZRI0lFtsRw3ffJoIoKCiw1pXS9lijNbTQMyt44CQSEZ4XtU/99QreQNujisWCKJUImcz3DA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Rider\\Debug\\CountdownTimer\\CountdownTimer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\c2085\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "C:\\Users\\c2085\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\c2085\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\c2085\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\c2085\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.4\\microsoft.netcore.app.crossgen2.win-x64.8.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

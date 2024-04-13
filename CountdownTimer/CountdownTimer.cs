@@ -23,7 +23,7 @@ public class CountdownTimer : UserControl
     {
         base.OnSizeChanged(e);
         
-        _center = new((float)Size.Width / 2, (float)Size.Height / 2 + (float)Size.Height / 16);
+        _center = new PointF((float)Size.Width / 2, (float)Size.Height / 2 + (float)Size.Height / 16);
         _radius = Math.Min(Size.Width * 5 / 16, Size.Height * 5 / 16);
 
         if (_label != null)
@@ -33,7 +33,7 @@ public class CountdownTimer : UserControl
         }
 
         UpdateCircularBoard();
-        Invalidate(); // 通知控件重绘
+        Invalidate();
     }
 
     private void InitControl()
@@ -67,9 +67,8 @@ public class CountdownTimer : UserControl
     {
         _currentSeconds = _countdownSeconds = 60;
 
-        _label = new();
+        _label = new Label();
         _label.TextAlign = ContentAlignment.MiddleCenter;
-        //_label.Font = new("Arial", 24, FontStyle.Bold);
         _label.AutoSize = true;
         Controls.Add(_label);
 
@@ -103,7 +102,7 @@ public class CountdownTimer : UserControl
     {
         if (_label != null)
         {
-            _label.Text = $"倒计时：{_currentSeconds / 60}分{(_currentSeconds % 60):D2}秒";
+            _label.Text = $"倒计时：{_currentSeconds / 60}分{_currentSeconds % 60:D2}秒";
         }
         
         Invalidate();
@@ -119,7 +118,7 @@ public class CountdownTimer : UserControl
 
     public void StartCountdownTimer()
     {
-        if (_timer != null && _status == Stopped)
+        if (_timer != null && _status == Stopped && _currentSeconds > 0)
         {
             _status = Running;
             _timer.Start();
@@ -128,20 +127,23 @@ public class CountdownTimer : UserControl
         UpdateCircularBoard();
     }
 
-    public void SwitchCountdownTimer()
+    public void PauseCountdownTimer()
     {
-        if (_timer != null)
+        if (_timer != null && _status == Running)
         {
-            if (_status == Running)
-            {
-                _timer.Stop();
-                _status = Paused;
-            }
-            else if (_status == Paused)
-            {
-                _timer.Start();
-                _status = Running;
-            }
+            _timer.Stop();
+            _status = Paused;
+        }
+        UpdateLabel();
+        UpdateCircularBoard();
+    }
+
+    public void ContinueCountdownTimer()
+    {
+        if (_timer != null && _status == Paused)
+        {
+            _timer.Start();
+            _status = Running;
         }
         UpdateLabel();
         UpdateCircularBoard();
@@ -149,15 +151,14 @@ public class CountdownTimer : UserControl
     
     public void StopCountdownTimer()
     {
-        if (_timer != null && (_status == Paused || _status == Running))
+        if (_timer != null && _status is Paused or Running)
         {
             _timer.Stop();
             _status = Stopped;
             _currentSeconds = _countdownSeconds;
-            
-            UpdateLabel();
-            UpdateCircularBoard();
         }
+        UpdateLabel();
+        UpdateCircularBoard();
     }
 
     public TimerStatus GetTimerStatus()
@@ -179,7 +180,7 @@ public class CountdownTimer : UserControl
     {
         _pen = new Pen(Color.Gray, 2);
         _brush = new SolidBrush(Color.Gray);
-        _center = new((float)Width / 2, (float)Height / 2);
+        _center = new PointF((float)Width / 2, (float)Height / 2);
         _radius = Math.Min(Width / 2, Height / 2);
         UpdateCircularBoard();
         Paint += PaintCircularBoard;
@@ -195,12 +196,12 @@ public class CountdownTimer : UserControl
             _ => 0
         };
         
-        //Invalidate();
+        Invalidate();
     }
 
     private void PaintCircularBoard(object? sender, PaintEventArgs e)
     {
-        Graphics g = e.Graphics;
+        var g = e.Graphics;
         if (_pen != null)
         {
             g.DrawEllipse(_pen, _center.X - _radius, _center.Y - _radius, _radius * 2, _radius * 2);

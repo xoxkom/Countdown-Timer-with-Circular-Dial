@@ -27,11 +27,10 @@ public class SetTimeButtons : UserControl
     {
         if (Parent != null)
         {
-            Size = new Size(Parent.ClientSize.Height / 4, Parent.ClientSize.Height);
             Location = new Point(Parent.ClientSize.Width - Parent.ClientSize.Height / 4, 0);
         }
 
-        for (int i = 1; i <= 5; i++)
+        for (var i = 1; i <= 5; i++)
         {
             if (_minutes?[i - 1] != null)
             {
@@ -54,21 +53,21 @@ public class SetTimeButtons : UserControl
     private void InitButtons()
     {
         _minutes = new SetTimeButton[7];
-        for(int i = 1; i <= 5; i++)
+        for(var i = 1; i <= 5; i++)
         {
            _minutes[i - 1] = new SetTimeButton(_timer, i);
         }
         _minutes[5] = new SetTimeButton(_timer, 12);
         _minutes[6] = new SetTimeButton(_timer, 13);
 
-        for (int i = 1; i <= 5; i++)
+        for (var i = 1; i <= 5; i++)
         {
             _minutes[i - 1]?.SetButtonText(ClientSize.Width / 15, $"{i}分钟");
         }
-        _minutes[5]?.SetButtonText(ClientSize.Width / 15, $"12分钟");
-        _minutes[6]?.SetButtonText(ClientSize.Width / 15, $"13分钟");
+        _minutes[5]?.SetButtonText(ClientSize.Width / 15, "12分钟");
+        _minutes[6]?.SetButtonText(ClientSize.Width / 15, "13分钟");
 
-        for (int i = 1; i <= 5; i++)
+        for (var i = 1; i <= 5; i++)
         {
             if (_minutes[i - 1] != null)
             {

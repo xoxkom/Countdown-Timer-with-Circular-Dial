@@ -28,7 +28,6 @@ partial class TimerWindow
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.FormBorderStyle = FormBorderStyle.FixedSingle;
         this.ClientSize = new System.Drawing.Size(1700, 1080);
-        //this.MinimumSize = new System.Drawing.Size(1700, 1080);
         this.Text = "计时器";
         
         _countdownTimer = new CountdownTimer();
